@@ -88,8 +88,6 @@ One of the standout features of YOLO is its ability to detect multiple objects i
 
 The **bounding boxes** are well-aligned with the edges of the detected objects, indicating that the model is not only classifying objects correctly but also **localizing them with good precision**. This accuracy is enabled by essential post-processing techniques such as **non-max suppression** and **Intersection over Union (IoU)**, which filter overlapping boxes and enhance localization performance.
 
-Overall, this output confirms the **effectiveness of YOLO** for use in complex environments like roads and highways, where **timely and accurate object detection** is critical. The system’s ability to detect various object types with high precision supports its suitability for **autonomous navigation**, **traffic analysis**, and **advanced driver-assistance systems (ADAS)**.
-
 ---
 
 ## 🧰 Tools and Libraries Used
