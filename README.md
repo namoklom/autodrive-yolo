@@ -1,4 +1,4 @@
-# 🚗 Car Detection for Autonomous Driving using YOLO
+# Car Detection for Autonomous Driving using YOLO
 
 ## 👤 Author
 
@@ -75,6 +75,20 @@ Function: `yolo_eval()`
 
 - Combines filtering and NMS steps
 - Outputs final predictions (scores, boxes, classes)
+
+---
+
+## 📊 Results
+
+![image](https://github.com/user-attachments/assets/8568bc0a-3040-4fcf-8f56-3f5299e767e7)
+
+The image above demonstrates the successful implementation of **YOLO (You Only Look Once)** object detection in the context of autonomous driving. In this visual result, the YOLO model accurately identifies multiple objects such as **cars**, a **bus**, and a **traffic light**. Each object is enclosed in a **bounding box** with a label and a **confidence score**, which represents the model’s certainty about the object’s classification. The scores range from 0 to 1, with higher values indicating stronger confidence in the detection.
+
+One of the standout features of YOLO is its ability to detect multiple objects in a **single forward pass** through the network, making it ideal for **real-time applications** like self-driving cars. In this example, several cars are detected with high confidence (e.g., `car 0.97`, `car 0.93`), even in different lanes and distances from the camera. The model also recognizes a traffic light (`traffic light 0.36`) and a bus (`bus 0.67`), showing that it can handle multiple object classes simultaneously.
+
+The **bounding boxes** are well-aligned with the edges of the detected objects, indicating that the model is not only classifying objects correctly but also **localizing them with good precision**. This accuracy is enabled by essential post-processing techniques such as **non-max suppression** and **Intersection over Union (IoU)**, which filter overlapping boxes and enhance localization performance.
+
+Overall, this output confirms the **effectiveness of YOLO** for use in complex environments like roads and highways, where **timely and accurate object detection** is critical. The system’s ability to detect various object types with high precision supports its suitability for **autonomous navigation**, **traffic analysis**, and **advanced driver-assistance systems (ADAS)**.
 
 ---
 
